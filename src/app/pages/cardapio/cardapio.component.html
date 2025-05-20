@@ -1,18 +1,17 @@
 <div class="superinfo-bg">
-  <p>Offers</p>
-  <p> Burgers</p>
-  <p> Fries</p>
-  <p> Snacks Salads</p>
-  <p> Cold Drinks</p>
-  <p> Happy Meal</p>
-  <p> Desserts</p>
-  <p>Hot Drinks</p>
-  <p>Sauces</p>
-  <p>Orbit</p>
+  <div *ngFor="let button of headerButtons">
+    <p>{{ button.name }}</p>
+  </div>
+
 </div>
 <h1 class="titulo">Burgers</h1>
-<div class="burgers">
-  <p>Royal Cheese Burger with extra Fries</p>
-  <p>with extra Fries</p>
-
+<div class="card">
+  <div class="burgers">
+    <p> <b>Royal Cheese Burger with extra Fries </b></p>
+    <p> <b>with extra Fries</b></p>
+    <span class="card-sabor"> 1 McChicken, 1 Big Mac, 1</span>
+    <span class="card-sabor"> Rooyal Cheeseburger, 3 medium</span>
+    <span class="card-valor"> <b>GPB 23.10</b></span>
+  </div>
+  <img src="assets/img/teste.jpg" alt="" />
 </div>
